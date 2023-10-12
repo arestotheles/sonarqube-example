@@ -16,7 +16,7 @@ public class ExampleController {
     }
 
     @GetMapping("/api/result/{id}")
-    ExampleResult getResult(@PathVariable Long id){
+    public ExampleResult getResult(@PathVariable Long id){
         return exampleService.getResult(id);
     }
 

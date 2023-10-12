@@ -43,7 +43,7 @@ class SonarqubeExampleApplicationTests {
     @Test
     void testExampleService() throws Exception {
         ExampleService exampleService = new ExampleService();
-        ExampleResult serviceResult = exampleService.getResult(1L);
+        ExampleResult serviceResult = exampleService.getResult(2L);
         assertEquals("id", serviceResult.getName());
         assertEquals(1L, serviceResult.getId());
     }
